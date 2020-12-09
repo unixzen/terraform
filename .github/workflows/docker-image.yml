@@ -22,5 +22,5 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
-        repository: unixzen/terraform
+        repository: unixzen/terraform/terraform-yandex
         tag_with_ref: true
