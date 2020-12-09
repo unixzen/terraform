@@ -18,7 +18,7 @@ FROM alpine:latest
 
 ARG TERRAFORM_PROVIDER_VERSION=0.47.0
 COPY --from=builder /tmp/terraform /usr/local/bin
-COPY --from=builder /tmp/terraform-provider-yandex_v${TERRAFORM_PROVIDER_VERSION}_x4 /usr/local/bin
+COPY --from=builder /tmp/terraform-provider-yandex_v${TERRAFORM_PROVIDER_VERSION} /usr/local/bin
 CMD ["terraform"]
 
 
