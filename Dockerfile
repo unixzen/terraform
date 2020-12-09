@@ -8,7 +8,7 @@ RUN set -ex \
     curl \
     unzip
 
-RUN curl https://releases.hashicorp.com/terraform/0.12.28/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
+RUN curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   && cd /tmp \
   && unzip /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   && curl https://releases.hashicorp.com/terraform-provider-yandex/${TERRAFORM_PROVIDER_VERSION}/terraform-provider-yandex_${TERRAFORM_PROVIDER_VERSION}_linux_amd64.zip -o /tmp/terraform-provider-yandex_${TERRAFORM_PROVIDER_VERSION}_linux_amd64.zip \
